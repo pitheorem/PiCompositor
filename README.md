@@ -1,10 +1,10 @@
 # PiCOMPOSITOR
 
-![PiCompositor Cover](./PiCompositor_Cover.png)
+![PiCompositor Cover](./Cover.png)
 
 PiCompositor is a layer-based compositing tool for TouchDesigner.
 
-* Authored by: Pedram Sadegh-Beyki [PiTHEOREM](https://www.pitheorem.xyz)
+* Developed by: Pedram Sadegh-Beyki [PiTHEOREM](https://www.pitheorem.xyz)
 * Version: 0.1 (Released on March 2023)
 
 >   This tool is one of the subtools of [PiKit](https://pitheorem.xyz/pikit) toolkit which is currently under development.
@@ -62,7 +62,7 @@ There are THREE panels within PiCOMPOSITOR interface.
 
 [**PARAMETERS Panel:**](#parameters-panel)   The panel for changing LAYERs or main COMPOSITION's parameters
 
-![PiCompositor UI](./PiCompositor_UI.png)
+![PiCompositor UI](./UI.png)
 
 ---
 ## IMPORTING LAYERs
