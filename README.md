@@ -1,10 +1,13 @@
 # PiCOMPOSITOR
+
+![PiCompositor Cover](./Cover.png)
+
 PiCompositor is a layer-based compositing tool for TouchDesigner.
 
 * Authored by: Pedram Sadegh-Beyki [PiTHEOREM](https://www.pitheorem.xyz)
 * Version: 0.1 (Released on March 2023)
->   This tool is one of the subtools of [PiKit](https://pitheorem.xyz/pikit) toolkit which is currently under development.
 
+>   This tool is one of the subtools of [PiKit](https://pitheorem.xyz/pikit) toolkit which is currently under development.
 ---
 ## DOCUMENTATION
 - [PiCOMPOSITOR](#picompositor)
@@ -13,7 +16,7 @@ PiCompositor is a layer-based compositing tool for TouchDesigner.
   - [WHAT IS PiCOMPOSITOR COMP?](#what-is-picompositor-comp)
   - [USER INTERFACE](#user-interface)
   - [IMPORTING LAYERs](#importing-layers)
-  - [SELECTING LAYERs](#selecting-layers)
+  - [LAYERS LIST](#layers-list)
   - [ACTIVE LAYERs](#active-layers)
   - [PREVIEW PANEL](#preview-panel)
   - [PARAMETERS PANEL](#parameters-panel)
@@ -53,11 +56,13 @@ First thing to know is that each PiCompositor component is a **COMPOSITION** (li
 
 There are THREE panels within PiCOMPOSITOR interface.
 
-**LAYERS LIST:**        The list of layers (Always visible)
-
 [**PREVIEW Panel:**](#preview-panel)      The dual-screen display of the ACTIVE layer beside compositor's final OUTPUT
 
+[**LAYERS LIST:**](#layers-list)        The list of layers (Always visible)
+
 [**PARAMETERS Panel:**](#parameters-panel)   The panel for changing LAYERs or main COMPOSITION's parameters
+
+![PiCompositor UI](./Interface.png)
 
 ---
 ## IMPORTING LAYERs
@@ -72,7 +77,9 @@ You can only add TOPs or PiCOMPOSITOR instances.
     The layers are referenced by their op.id attribute. Meaning that if you cut/paste any of the imported TOPs within NETWORK EDITOR, the layer will lose the reference and you need to redefine the source by drag'n'dropping the new TOP onto the layer's **Source** parameter.
 
 ---
-## SELECTING LAYERs
+## LAYERs LIST
+
+Here you can select and control your layers order, state, naming and etc.
 
 (LClick) on a layer's name to select a single layer
 
@@ -81,6 +88,8 @@ You can only add TOPs or PiCOMPOSITOR instances.
 [Up] or [Down] keys to select the layer above or below
 
 **!** Locked layers cannot be selected ([why?](#lock-tags))
+
+(LClick) and drag any layer within the list to reorder the layer.
 
 **TIP:** You can create multiple selection groups via layers' COLOR tag ([how?](#color-tags))
 
@@ -177,6 +186,7 @@ The COLOR tag is defined as the colored box in the third column of the LAYERS LI
 
     * You can add your own color tags by appending a Name and RGB values to the 'ColorTags_Table' DAT inside the PiCOMPOSITOR COMP (under 'UI' annotation).
 
+The color of each layer will also appears behind the active layer's name within the PREVIEW and PARAMETER PANEL, just to make it a bit more clear.
 
 ---
 ## NAMEs & IDs
@@ -291,8 +301,9 @@ Just like any program, this one comes with bugs and errors as well. So to report
 There are some features that I'm looking forward to implement for later versions:
 + Merging or Grouping Layers directly within the interface
 + Shy Tags for layers, making them hidable from LAYERS LIST.
-+ Multi-layer relative parameter adjusting (currently any change on parameters will apply absolutely identical on all the selected layers)
-+ Viewer Developments (this is a big one - setting your transformations directly within Preview Panel could be a life-saver)
++ ColorTag selecting menu will be improved.
++ Multi-layer relative parameter adjusting feature (currently any change on parameters will apply absolutely identical on all the selected layers)
++ Preview Panel developments (Extendability in size + hands-on transform adjustments directly within viewer)
 + Effects list for each layer.
 + Got a cool idea? [drop me an email.](mailto:pitheorem@gmail.com)
 
