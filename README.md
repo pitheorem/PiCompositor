@@ -1,6 +1,6 @@
 # PiCOMPOSITOR
 
-![PiCompositor Cover](./Cover.png)
+![PiCompositor Cover](./PiCompositor_Cover.png)
 
 PiCompositor is a layer-based compositing tool for TouchDesigner.
 
@@ -62,7 +62,7 @@ There are THREE panels within PiCOMPOSITOR interface.
 
 [**PARAMETERS Panel:**](#parameters-panel)   The panel for changing LAYERs or main COMPOSITION's parameters
 
-![PiCompositor UI](./Interface.png)
+![PiCompositor UI](./PiCompositor_UI.png)
 
 ---
 ## IMPORTING LAYERs
