@@ -6,9 +6,9 @@ PiCompositor is a layer-based compositing tool for TouchDesigner.
 >   This tool is one of the subtools of [PiKit](https://pitheorem.xyz/pikit) toolkit which is currently under development.
 
 ---
-## TABLE OF CONTENT
+## DOCUMENTATION
 - [PiCOMPOSITOR](#picompositor)
-  - [TABLE OF CONTENT](#table-of-content)
+  - [DOCUMENTATION](#documentation)
   - [HOW IS THIS TOOL HELPFUL?](#how-is-this-tool-helpful)
   - [WHAT IS PiCOMPOSITOR COMP?](#what-is-picompositor-comp)
   - [USER INTERFACE](#user-interface)
